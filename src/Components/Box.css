@@ -1,0 +1,81 @@
+.lake .box {
+  background-color: rgba(170, 255, 130, 0.596);
+  border: 2px solid rgb(234, 7, 255);
+  position: absolute;
+  padding: 1rem;
+  padding-top: 3rem;
+  top: 0;
+  left: 0;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+
+  /* making the ... dots */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lake__one__box {
+  animation: balls1 1s infinite linear;
+}
+
+.lake__two__box {
+  animation: balls2 4s infinite linear;
+}
+
+.lake__three__box {
+  animation: balls3 8s infinite linear;
+}
+
+@keyframes balls1 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  75% {
+    transform: translate(10px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes balls2 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 210px);
+  }
+  50% {
+    transform: translate(210px, 210px);
+  }
+  75% {
+    transform: translate(210px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes balls3 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 410px);
+  }
+  50% {
+    transform: translate(410px, 410px);
+  }
+  75% {
+    transform: translate(410px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
