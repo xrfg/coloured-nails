@@ -1,0 +1,7 @@
+.blob {
+  padding: 1.6rem;
+  padding-bottom: 4.6rem;
+  &__text {
+    @include body-text;
+  }
+}

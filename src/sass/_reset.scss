@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: khaki;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.content-container {
+  min-width: 300px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+} */
+
+.page {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: lavender;
+}
+
+.background1 {
+  background-image: linear-gradient(hotpink, white);
+}
+
+.background2 {
+  background-image: linear-gradient(white, rgb(166, 255, 185));
+}
+
+.background3 {
+  background-image: linear-gradient(rgba(255, 105, 180, 0), rgb(166, 255, 185));
+}
