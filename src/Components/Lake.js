@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./Lake.css";
-import "./Box.css";
+import "./Lake.scss";
+import "./Box.scss";
 import Box from "./Box";
 
 export default function Lake(props) {
