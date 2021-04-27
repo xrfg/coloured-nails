@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
-import "./Box.scss";
+import "../../Sass/Box.scss";
 
 export default function Box(props) {
   return (

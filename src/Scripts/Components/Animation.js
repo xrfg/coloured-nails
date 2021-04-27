@@ -1,6 +1,6 @@
 import React from "react";
-import "./Reset.scss";
-import "./Animation.scss";
+import "../../Sass/Reset.scss";
+import "../../Sass/Animation.scss";
 import Lake from "./Lake";
 
 export default function Animation() {

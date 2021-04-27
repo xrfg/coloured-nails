@@ -1,7 +1,7 @@
 import React from "react";
 import Animation from "./Components/Animation";
-import "./Components/Reset.css";
-import "./App.scss";
+import "../Sass/Reset.scss";
+import "../Sass/App.scss";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
