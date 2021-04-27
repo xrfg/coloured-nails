@@ -4,14 +4,12 @@ import "../../Sass/Animation.scss";
 import Lake from "./Lake";
 import { Route } from "react-router-dom";
 import TextComponent from "./TextComponent";
-import Footer from "./Footer";
 
 export default function Animation() {
   const lakes = ["one", "two", "three"];
   return (
     <div className="page">
-      {/* <TextComponent /> */}
-      <Footer />
+      <Route path="/box/:textId" component={TextComponent} />
       <div className="universe">
         <main>
           <div className="content-container galaxy">

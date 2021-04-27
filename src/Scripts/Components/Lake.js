@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../../Sass/Lake.scss";
 import "../../Sass/Box.scss";
 import Box from "./Box";
+import textList from "../../json/texts.json";
 
 export default function Lake(props) {
   const [boxNumbering, setBoxNumbering] = useState([]);
+
+  const [textData] = useState(textList);
 
   useEffect(() => {
     // componentDidMount
@@ -28,6 +31,9 @@ export default function Lake(props) {
       {boxNumbering.map((box, i) => {
         return (
           <Box
+            text={textData[i].text}
+            textId={textData[i].id}
+            textDate={textData[i].date}
             numberOfLake={props.lakeNumber}
             boxNum={box}
             key={box}
