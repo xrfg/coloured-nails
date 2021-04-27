@@ -24,26 +24,20 @@ body {
   padding: 0 20px;
 }
 
-/* a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-} */
-
-.page {
-  min-height: 100vh;
-  min-width: 100vw;
-  background-color: lavender;
-}
-
 .background1 {
   background-image: linear-gradient(hotpink, white);
 }
 
 .background2 {
-  background-image: linear-gradient(white, rgb(166, 255, 185));
+  background-image: linear-gradient(white, #a6ffb9);
 }
 
 .background3 {
-  background-image: linear-gradient(rgba(255, 105, 180, 0), rgb(166, 255, 185));
+  background-image: linear-gradient(rgba(255, 105, 180, 0), #a6ffb9);
+}
+
+.page {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(93, 93, 236, 0.493);
 }

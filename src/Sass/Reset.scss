@@ -31,7 +31,22 @@ body {
 } */
 
 .page {
+  position: relative;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: rgb(93, 93, 236);
+  background-color: rgba(93, 93, 236, 0.493);
+  display: flex;
+  justify-content: center;
+}
+
+.background1 {
+  background-image: linear-gradient(hotpink, white);
+}
+
+.background2 {
+  background-image: linear-gradient(white, #a6ffb9);
+}
+
+.background3 {
+  background-image: linear-gradient(rgba(255, 105, 180, 0), #a6ffb9);
 }

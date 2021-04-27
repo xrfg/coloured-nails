@@ -1,0 +1,11 @@
+@import "variables";
+@import "typography";
+@import "background";
+@import "buttons";
+@import "header";
+@import "content";
+
+.text-component-page {
+  position: absolute;
+  margin: 2rem;
+}
