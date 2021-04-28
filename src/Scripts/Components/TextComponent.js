@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import "../../Sass/TextComponent/TextComponent.scss";
+import "../../Sass/Reset.scss";
+import "../../Sass/TextComponent.scss";
 
 export default function TextComponent(props) {
   const { textId, textDate, text } = props.location.state;
 
   return (
-    <section className="background2 text-component-page">
+    <section style={{ zIndex: "100" }} className="background2 text-component">
       <header className="header">
-        <div className="nav-bubble div-random-link">
-          <a href="/">🍀</a>
+        <div className="nav-bubble">
+          <span onClick={() => props.history.goBack()}>🍀</span>
         </div>
       </header>
 

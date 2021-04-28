@@ -9,6 +9,8 @@ export default function Lake(props) {
 
   const [textData] = useState(textList);
 
+  /*  const [playState, setPlayState] = useState("running"); */
+
   useEffect(() => {
     // componentDidMount
     switch (props.lakeNumber) {
@@ -27,7 +29,15 @@ export default function Lake(props) {
   }, []);
 
   return (
-    <div className={`lake__${props.lakeNumber} plane`}>
+    <div
+      /* onMouseOver={() => {
+        setPlayState("paused");
+      }}
+      onMouseOut={() => {
+        setPlayState("running");
+      }} */
+      className={`lake__${props.lakeNumber} plane`}
+    >
       {boxNumbering.map((box, i) => {
         return (
           <Box
@@ -38,6 +48,7 @@ export default function Lake(props) {
             boxNum={box}
             key={box}
             animationDelay={i + 1 + "s"}
+            /* playState={playState} */
           />
         );
       })}

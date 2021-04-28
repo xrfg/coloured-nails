@@ -18,6 +18,9 @@
 
 .lake__one__box {
   animation: balls1 1s infinite linear;
+  /* &:hover {
+    animation-play-state: paused;
+  } */
 }
 
 .lake__two__box {
