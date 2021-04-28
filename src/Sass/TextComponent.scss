@@ -1,12 +1,32 @@
+@font-face {
+  font-family: "Geneva";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Geneva"), url("../fonts/Geneva.ttf") format("truetype");
+}
+
+.overlay {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-component {
   position: absolute;
+  height: 80vh;
   border-radius: 10px;
+  border: 2px solid hotpink;
   margin: 1rem;
+  padding: 1rem;
+  overflow: auto;
 }
 
 @mixin body-text {
   font-size: 1.85rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Geneva", Verdana, Tahoma, sans-serif;
   color: rgb(206, 206, 206);
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
     -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
@@ -42,12 +62,19 @@
     }
   }
 }
+main {
+  .blob {
+    padding: 1.6rem;
 
-.blob {
-  padding: 1.6rem;
-  padding-bottom: 4.6rem;
-  &__text {
-    @include body-text;
+    &__text {
+      @include body-text;
+      padding-bottom: 4.6rem;
+    }
+    &__date {
+      font-size: 1.4rem;
+      color: gray;
+      text-align: right;
+    }
   }
 }
 

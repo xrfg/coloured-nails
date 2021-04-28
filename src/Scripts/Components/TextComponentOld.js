@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../Sass/Reset.scss";
 import "../../Sass/TextComponent.scss";
 
 export default function TextComponent(props) {
   const { textId, textDate, text } = props.location.state;
+
   return (
     <div
       className="overlay"
@@ -13,11 +14,16 @@ export default function TextComponent(props) {
       }}
     >
       <section style={{ zIndex: "100" }} className="background2 text-component">
+        <header className="header">
+          <div className="nav-bubble">
+            <span>🍀</span>
+          </div>
+        </header>
+
         <div>
           <main className="content-container">
             <div className="blob">
               <p className="blob__text">{text}</p>
-              <p className="blob__date">{textDate}</p>
             </div>
           </main>
         </div>

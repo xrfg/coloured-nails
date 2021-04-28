@@ -23,20 +23,21 @@ footer {
     border-radius: 2px;
     display: inline-block;
     background-color: rgb(108, 196, 255);
-    animation: pulse-glow-footer 3s linear infinite;
+    animation: pulse-glow-footer 2s linear infinite;
+    cursor: pointer;
   }
 }
 
 @keyframes pulse-glow-footer {
   0% {
-    box-shadow: 0 0 1px 1px $pulseColorTwo;
+    box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 2px 2px $pulseColorTwo;
   }
 
   50% {
-    box-shadow: 0 0 2px 2px $pulseColorTwo, inset 0 0 10px 10px $pulseColorTwo;
+    box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 6px 6px $pulseColorTwo;
   }
 
   100% {
-    box-shadow: 0 0 1px 1px $pulseColorTwo;
+    box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 2px 2px $pulseColorTwo;
   }
 }
