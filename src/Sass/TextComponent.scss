@@ -38,7 +38,7 @@
       position: sticky;
       top: 0;
       cursor: pointer;
-      animation: pulse-glow 2s ease-in-out 0s infinite;
+      animation: pulse-glow 1.6s linear infinite;
     }
   }
 }
@@ -51,22 +51,22 @@
   }
 }
 
+$pulseColorOne: rgb(97, 161, 0);
+$pulseColorTwo: rgba(255, 192, 203, 0.6);
+
 @keyframes pulse-glow {
   0% {
-    text-shadow: -1px -1px 0 rgba(255, 187, 0, 0.4),
-      1px -1px 0 rgba(128, 187, 0, 0.4), -1px 1px 0 rgba(128, 187, 0, 0.4),
-      1px 1px 0 rgba(128, 187, 0, 0.4);
+    text-shadow: -1px -1px 0 $pulseColorOne, 1px -1px 0 $pulseColorOne,
+      -1px 1px 0 $pulseColorOne, 1px 1px 0 $pulseColorOne;
   }
 
   50% {
-    text-shadow: -1px -1px 0 rgba(128, 0, 128, 0.4),
-      1px -1px 0 rgba(128, 0, 128, 0.4), -1px 1px 0 rgba(128, 0, 128, 0.4),
-      1px 1px 0 rgba(128, 0, 128, 0.4);
+    text-shadow: -1px -1px 0 $pulseColorTwo, 1px -1px 0$pulseColorTwo,
+      -1px 1px 0 $pulseColorTwo, 1px 1px 0 $pulseColorTwo;
   }
 
   100% {
-    text-shadow: -1px -1px 0 rgba(255, 187, 0, 0.4),
-      1px -1px 0 rgba(128, 187, 0, 0.4), -1px 1px 0 rgba(128, 187, 0, 0.4),
-      1px 1px 0 rgba(128, 187, 0, 0.4);
+    text-shadow: -1px -1px 0 $pulseColorOne, 1px -1px 0 $pulseColorOne,
+      -1px 1px 0 $pulseColorOne, 1px 1px 0 $pulseColorOne;
   }
 }

@@ -14,7 +14,10 @@
   /* position: relative; 26/04*/
   /* width: 100%;
   height: 100%; */
-  background-color: rgba(0, 255, 255, 0.616);
+  background-color: rgb(108, 196, 255);
+  box-shadow: 0 0 10px 2px rgb(97, 161, 0), inset 0 0 12px 4px rgb(97, 161, 0);
+  border: 1px solid rgb(97, 161, 0);
+  border-radius: 10px;
   padding: 2rem;
   transform: preserve-3d;
   transform: rotateX(45deg);

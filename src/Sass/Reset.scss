@@ -34,7 +34,7 @@ body {
   position: relative;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: rgba(93, 93, 236, 0.493);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
 }
@@ -49,4 +49,8 @@ body {
 
 .background3 {
   background-image: linear-gradient(rgba(255, 105, 180, 0), #a6ffb9);
+}
+
+.background4 {
+  background-image: linear-gradient(white, rgb(108, 196, 255));
 }

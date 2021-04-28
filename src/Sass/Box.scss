@@ -1,6 +1,16 @@
+$outlineColor: rgb(0, 0, 0);
+
+@font-face {
+  font-family: "Geneva";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Geneva"), url("../fonts/Geneva.ttf") format("truetype");
+}
+
 .lake .box {
-  background-color: rgba(170, 255, 130, 0.596);
-  border: 2px solid rgb(234, 7, 255);
+  border: 2px solid pink;
+  box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
+    inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
   position: absolute;
   padding: 1rem;
   padding-top: 3rem;
@@ -9,6 +19,16 @@
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
+  font-size: 2rem;
+  font-family: "Geneva";
+  color: greenyellow;
+  &:hover {
+    color: black;
+  }
+  /* text-shadow: -1px -1px 0 $outlineColor, 1px -1px 0 $outlineColor,
+    -1px 1px 0 $outlineColor, 1px 1px 0 $outlineColor; */
+  letter-spacing: 1px;
+  text-decoration: none;
 
   /* making the ... dots */
   white-space: nowrap;
@@ -18,9 +38,6 @@
 
 .lake__one__box {
   animation: balls1 1s infinite linear;
-  /* &:hover {
-    animation-play-state: paused;
-  } */
 }
 
 .lake__two__box {

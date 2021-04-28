@@ -10,6 +10,8 @@ export default function Box(props) {
   const [display, setDisplay] = useState("block");
 
   const [playState, setPlayState] = useState("running");
+  const [opacity, setOpacity] = useState("rgba(255, 201, 130, 0.5)");
+  const [zIndex, setZIndex] = useState("10");
 
   // after 13 clicked times, hide the lakes
   const [count, setCount] = useState(0);
@@ -21,9 +23,13 @@ export default function Box(props) {
     <Link
       onMouseOver={() => {
         setPlayState("paused");
+        setOpacity("rgba(255, 233, 204, 1)");
+        setZIndex("20");
       }}
       onMouseOut={() => {
         setPlayState("running");
+        setOpacity("rgba(255, 201, 130, 0.5)");
+        setZIndex("10");
       }}
       onClick={() => {
         setDisplay("none");
@@ -37,7 +43,8 @@ export default function Box(props) {
       style={{
         animationPlayState: playState,
         animationDelay: props.animationDelay,
-        zIndex: "10",
+        backgroundColor: opacity,
+        zIndex: zIndex,
         display: display,
       }}
     >

@@ -4,9 +4,9 @@ import "../../Sass/Reset.scss";
 
 export default function Footer() {
   return (
-    <footer className="background2">
+    <footer className="background4">
       <section className="content-container">
-        <span>coloured nails is</span>
+        <span className="footer-description">coloured nails is &rarr;</span>
       </section>
     </footer>
   );
