@@ -1,0 +1,48 @@
+$pulseColorOne: rgb(97, 161, 0);
+$pulseColorTwo: rgba(255, 192, 203, 0.6);
+
+.header {
+  /* background-image: linear-gradient(rgb(166, 255, 185), hotpink); */
+  padding: 3rem;
+
+  .nav-bubble {
+    background-image: linear-gradient(
+      rgba(255, 105, 180, 0),
+      rgb(166, 255, 185)
+    );
+    max-width: 400px;
+    height: 15rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 4rem;
+      text-decoration: none;
+      text-shadow: 2px 2px 2px rgba(70, 131, 180, 0.521);
+      position: sticky;
+      top: 0;
+      cursor: pointer;
+      animation: pulse-glow 1.6s linear infinite;
+    }
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    text-shadow: -1px -1px 0 $pulseColorOne, 1px -1px 0 $pulseColorOne,
+      -1px 1px 0 $pulseColorOne, 1px 1px 0 $pulseColorOne;
+  }
+
+  50% {
+    text-shadow: -1px -1px 0 $pulseColorTwo, 1px -1px 0$pulseColorTwo,
+      -1px 1px 0 $pulseColorTwo, 1px 1px 0 $pulseColorTwo;
+  }
+
+  100% {
+    text-shadow: -1px -1px 0 $pulseColorOne, 1px -1px 0 $pulseColorOne,
+      -1px 1px 0 $pulseColorOne, 1px 1px 0 $pulseColorOne;
+  }
+}

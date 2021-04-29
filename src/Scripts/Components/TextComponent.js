@@ -12,7 +12,10 @@ export default function TextComponent(props) {
         if (e.target.className === "overlay") props.history.goBack();
       }}
     >
-      <section style={{ zIndex: "100" }} className="background2 text-component">
+      <section
+        style={{ zIndex: "100" }}
+        className="background2-1 text-component"
+      >
         <div>
           <main className="content-container">
             <div className="blob">
@@ -25,5 +28,3 @@ export default function TextComponent(props) {
     </div>
   );
 }
-/* props.history.goBack() */
-/* onClick={() => props.history.goBack()} */
