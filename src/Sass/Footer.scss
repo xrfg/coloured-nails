@@ -6,26 +6,26 @@ footer {
   width: 100%;
   padding: 1.8rem 3rem;
   font-size: 1.6rem;
-  color: black;
   text-align: left;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .footer-description {
   position: relative;
+  text-decoration: none;
+  color: black;
+}
 
-  &:after {
-    content: "";
-    margin-left: 10px;
-    position: absolute;
-    width: 2.6rem;
-    height: 2rem;
-    border-radius: 2px;
-    display: inline-block;
-    background-color: rgb(108, 196, 255);
-    animation: pulse-glow-footer 2s linear infinite;
-    cursor: pointer;
-  }
+.footer-screen {
+  margin-left: 10px;
+  position: absolute;
+  width: 2.6rem;
+  height: 2rem;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: rgb(108, 196, 255);
+  animation: pulse-glow-footer 2s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes pulse-glow-footer {

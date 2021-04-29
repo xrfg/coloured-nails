@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Route } from "react-router-dom";
 import "../../Sass/Reset.scss";
 import "../../Sass/TextComponent.scss";
+import Description from "./Description";
 
 export default function TextComponent(props) {
   const { textId, textDate, text } = props.location.state;
@@ -12,6 +14,7 @@ export default function TextComponent(props) {
         if (e.target.className === "overlay") props.history.goBack();
       }}
     >
+      <Route path="/box/:textId/description" component={Description} />
       <section
         style={{ zIndex: "100" }}
         className="background2-1 text-component"

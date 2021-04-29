@@ -1,0 +1,54 @@
+$website-blue: rgb(108, 196, 255);
+$website-green: rgb(97, 161, 0);
+$outline: rgb(66, 66, 66);
+
+@font-face {
+  font-family: "Geneva";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Geneva"), url("../fonts/Geneva.ttf") format("truetype");
+}
+
+@mixin body-text {
+  font-size: 1.85rem;
+  font-family: "Geneva", Verdana, Tahoma, sans-serif;
+  color: rgb(99, 99, 99);
+  /* text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline,
+    1px 1px 0 $outline; */
+  line-height: 2.9rem;
+  letter-spacing: 0.09rem;
+}
+
+a {
+  text-decoration: underline wavy white;
+  color: inherit;
+}
+
+.overlay {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-component {
+  position: absolute;
+  height: 34rem;
+  width: 47rem;
+  padding: 2rem;
+  border-radius: 50%;
+  overflow: auto;
+  border: 2px solid pink;
+  box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
+    inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
+
+  .blob {
+    padding: 6.9rem 2rem 2rem 4rem;
+
+    &__text {
+      @include body-text;
+    }
+  }
+}
