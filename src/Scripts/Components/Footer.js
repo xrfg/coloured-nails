@@ -6,7 +6,7 @@ import "../../Sass/Reset.scss";
 export default function Footer() {
   return (
     <footer className="background4">
-      <section className="content-container">
+      <section className="content-container footer-container">
         <span className="footer-description">coloured nails is &rarr;</span>
         <Link to="/description" className="footer-screen"></Link>
       </section>

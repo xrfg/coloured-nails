@@ -18,9 +18,19 @@ export default function Description(props) {
         <div className="blob">
           <p className="blob__text">
             'coloured nails' is a collection of texts co-written by{" "}
-            <a href="https://www.instagram.com/slantedroof2000/">mar correia</a>{" "}
+            <a
+              rel="noreferrer"
+              href="https://www.instagram.com/slantedroof2000/"
+              target="_blank"
+            >
+              mar correia
+            </a>{" "}
             and{" "}
-            <a href="https://www.instagram.com/lavendersweatexcess">
+            <a
+              rel="noreferrer"
+              href="https://www.instagram.com/lavendersweatexcess"
+              target="_blank"
+            >
               henrique martins
             </a>{" "}
             in the spawn of a few days between december 2019 and january 2020,

@@ -52,3 +52,13 @@ a {
     }
   }
 }
+
+@media (max-width: 600px) {
+  .description-component {
+    height: 47rem;
+    width: 34rem;
+    .blob {
+      padding: 9rem 2rem 2rem 4rem;
+    }
+  }
+}

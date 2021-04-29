@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route } from "react-router-dom";
 import "../../Sass/Reset.scss";
 import "../../Sass/TextComponent.scss";
@@ -10,7 +10,6 @@ export default function TextComponent(props) {
     <div
       className="overlay"
       onClick={(e) => {
-        console.log(e.target);
         if (e.target.className === "overlay") props.history.goBack();
       }}
     >

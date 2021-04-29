@@ -10,6 +10,10 @@ footer {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.footer-container {
+  display: flex;
+  align-items: center;
+}
 .footer-description {
   position: relative;
   text-decoration: none;
@@ -17,8 +21,8 @@ footer {
 }
 
 .footer-screen {
-  margin-left: 10px;
-  position: absolute;
+  margin-left: 0.5rem;
+  /* position: absolute; */
   width: 2.6rem;
   height: 2rem;
   border-radius: 2px;
@@ -39,5 +43,13 @@ footer {
 
   100% {
     box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 2px 2px $pulseColorTwo;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-screen {
+    width: 2rem;
+    height: 2.6rem;
+    margin-bottom: 0rem;
   }
 }

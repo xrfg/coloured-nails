@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../Sass/Box.scss";
 
 export default function Box(props) {
@@ -12,12 +12,6 @@ export default function Box(props) {
   const [playState, setPlayState] = useState("running");
   const [opacity, setOpacity] = useState("rgba(255, 201, 130, 0.5)");
   const [zIndex, setZIndex] = useState("10");
-
-  // after 13 clicked times, hide the lakes
-  const [count, setCount] = useState(0);
-  const increment = () => {
-    setCount((count) => count + 1);
-  };
 
   return (
     <Link
@@ -33,7 +27,6 @@ export default function Box(props) {
       }}
       onClick={() => {
         setDisplay("none");
-        increment();
       }}
       to={{
         pathname: `/box/${textId}`,
