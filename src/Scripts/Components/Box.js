@@ -13,7 +13,9 @@ export default function Box(props) {
   const [opacity, setOpacity] = useState("rgba(255, 201, 130, 0.5)");
   const [zIndex, setZIndex] = useState("10");
 
-  /*  const [click, setClick] = useState(0); */
+  const fullText = text.split(" ");
+  const firstThreeWords = `${fullText[0]} ${fullText[1]} ${fullText[2]}`;
+
   return (
     <Link
       onMouseOver={() => {
@@ -28,7 +30,6 @@ export default function Box(props) {
       }}
       onClick={() => {
         setDisplay("none");
-        /* setClick(() => click + 1); */
       }}
       to={{
         pathname: `/box/${textId}`,
@@ -47,7 +48,7 @@ export default function Box(props) {
         display: display,
       }}
     >
-      {text}
+      <span>{firstThreeWords}</span>
     </Link>
   );
 }

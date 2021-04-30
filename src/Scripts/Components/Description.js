@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../Sass/Reset.scss";
 import "../../Sass/Description.scss";
 
-export default function Description(props) {
+export default function Description() {
   return (
     <div
       className="overlay"
+      /* style={{ display: displayItem }}
       onClick={(e) => {
-        console.log(e.target);
+        console.log(e.target.className);
         if (e.target.className === "overlay") props.history.goBack();
-      }}
+      }} */
     >
       <section
         style={{ zIndex: "100" }}

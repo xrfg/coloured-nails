@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import "../../Sass/Lake.scss";
 import "../../Sass/Box.scss";
 import Box from "./Box";
-import textList from "../../json/texts.json";
+/* import textList from "../../json/texts.json"; */
+import { data } from "../../data/data.js";
 
 export default function Lake(props) {
   const [boxNumbering, setBoxNumbering] = useState([]);
 
-  const [textData] = useState(textList);
+  /*  const [textData] = useState(data); */
 
   useEffect(() => {
     // componentDidMount
@@ -29,11 +30,14 @@ export default function Lake(props) {
   return (
     <div className={`lake__${props.lakeNumber} plane`}>
       {boxNumbering.map((box, i) => {
+        console.log("RENDERING ONE MAP");
+        const count = box;
+        console.log(count, i);
         return (
           <Box
-            text={textData[i].text}
-            textId={textData[i].id}
-            textDate={textData[i].date}
+            text={data[i].text}
+            textId={data[i].id}
+            textDate={data[i].date}
             numberOfLake={props.lakeNumber}
             boxNum={box}
             key={box}

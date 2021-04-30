@@ -13,18 +13,26 @@ $outlineColor: rgb(0, 0, 0);
     inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
   position: absolute;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  /*   text-overflow: ellipsis; */
+
   width: 9vw;
   height: 9vh;
   /* width: 9rem;
   height: 9rem; */
-  padding: 1.6rem 1.7rem;
-  /* padding: 0.5rem; */
+  /* padding: 1.6rem 1.7rem; */
+
   border-radius: 50%;
   font-size: 2rem;
   font-family: "Geneva";
   color: greenyellow;
   &:hover {
     color: black;
+    overflow: visible;
   }
   /* text-shadow: -1px -1px 0 $outlineColor, 1px -1px 0 $outlineColor,
     -1px 1px 0 $outlineColor, 1px 1px 0 $outlineColor; */
@@ -32,21 +40,21 @@ $outlineColor: rgb(0, 0, 0);
   text-decoration: none;
 
   /* making the ... dots */
-  white-space: nowrap;
+  /*  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  */
 }
 
 .lake__one__box {
-  animation: balls1 1s infinite linear;
+  animation: balls1 1.2s infinite linear;
 }
 
 .lake__two__box {
-  animation: balls2 4s infinite linear;
+  animation: balls2 4.8s infinite linear;
 }
 
 .lake__three__box {
-  animation: balls3 8s infinite linear;
+  animation: balls3 9.6s infinite linear;
 }
 
 @keyframes balls1 {
@@ -101,11 +109,11 @@ $outlineColor: rgb(0, 0, 0);
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .lake .box {
     padding: 1.6rem 0.5rem 1.6rem 1rem;
   }
-}
+} */
 
 /* @keyframes balls1 {
   0% {
