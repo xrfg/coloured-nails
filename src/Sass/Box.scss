@@ -12,12 +12,13 @@ $outlineColor: rgb(0, 0, 0);
   box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
     inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
   position: absolute;
-  padding: 1rem;
-  padding-top: 3rem;
-  top: 0;
-  left: 0;
-  width: 9rem;
-  height: 9rem;
+
+  width: 9vw;
+  height: 9vh;
+  /* width: 9rem;
+  height: 9rem; */
+  padding: 1.6rem 1.7rem;
+  /* padding: 0.5rem; */
   border-radius: 50%;
   font-size: 2rem;
   font-family: "Geneva";
@@ -49,6 +50,64 @@ $outlineColor: rgb(0, 0, 0);
 }
 
 @keyframes balls1 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 1vh);
+  }
+  50% {
+    transform: translate(1vw, 1vh);
+  }
+  75% {
+    transform: translate(1vw, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes balls2 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 21vh);
+  }
+  50% {
+    transform: translate(21vw, 21vh);
+  }
+  75% {
+    transform: translate(21vw, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes balls3 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 41vh);
+  }
+  50% {
+    transform: translate(41vw, 41vh);
+  }
+  75% {
+    transform: translate(41vw, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .lake .box {
+    padding: 1.6rem 0.5rem 1.6rem 1rem;
+  }
+}
+
+/* @keyframes balls1 {
   0% {
     transform: translate(0);
   }
@@ -99,3 +158,4 @@ $outlineColor: rgb(0, 0, 0);
     transform: translate(0);
   }
 }
+ */

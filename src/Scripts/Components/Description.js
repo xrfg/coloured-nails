@@ -28,7 +28,7 @@ export default function Description(props) {
             and{" "}
             <a
               rel="noreferrer"
-              href="https://www.instagram.com/lavendersweatexcess"
+              href="https://www.instagram.com/lavenderexcesssweat"
               target="_blank"
             >
               henrique martins

@@ -13,6 +13,7 @@ export default function Box(props) {
   const [opacity, setOpacity] = useState("rgba(255, 201, 130, 0.5)");
   const [zIndex, setZIndex] = useState("10");
 
+  /*  const [click, setClick] = useState(0); */
   return (
     <Link
       onMouseOver={() => {
@@ -27,10 +28,15 @@ export default function Box(props) {
       }}
       onClick={() => {
         setDisplay("none");
+        /* setClick(() => click + 1); */
       }}
       to={{
         pathname: `/box/${textId}`,
-        state: { textId: textId, textDate: textDate, text: text },
+        state: {
+          textId: textId,
+          textDate: textDate,
+          text: text,
+        },
       }}
       className={`box lake__${props.numberOfLake}__box box-${props.boxNum}`}
       style={{
