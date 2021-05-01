@@ -6,6 +6,7 @@ import Description from "./Description";
 
 export default function TextComponent(props) {
   const { textId, textDate, text } = props.location.state;
+  console.log(textId, textDate, text);
   return (
     <div
       className="overlay"

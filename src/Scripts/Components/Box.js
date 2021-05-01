@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import "../../Sass/Box.scss";
 
 export default function Box(props) {
-  const [textId] = useState(props.textId);
-  const [textDate] = useState(props.textDate);
-  const [text] = useState(props.text);
+  /* const [textId] = useState(props.entry.id);
+  const [textDate] = useState(props.entry.date);
+  const [text] = useState(props.entry.text); */
+
+  const { id, date, text } = props.entry;
 
   const [display, setDisplay] = useState("block");
 
@@ -32,11 +34,12 @@ export default function Box(props) {
         setDisplay("none");
       }}
       to={{
-        pathname: `/box/${textId}`,
+        pathname: `/box/${id}`,
         state: {
-          textId: textId,
-          textDate: textDate,
+          textId: id,
+          textDate: date,
           text: text,
+          /* textObj: props.entry */
         },
       }}
       className={`box lake__${props.numberOfLake}__box box-${props.boxNum}`}
