@@ -1,5 +1,12 @@
 $pulseColorTwo: rgb(97, 161, 0);
 
+@font-face {
+  font-family: "Geneva";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Geneva"), url("../fonts/Geneva.ttf") format("truetype");
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -7,7 +14,7 @@ footer {
   padding: 1.8rem 3rem;
   font-size: 1.6rem;
   text-align: left;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Geneva", Verdana, Tahoma, sans-serif;
 }
 
 .footer-container {
@@ -17,22 +24,36 @@ footer {
 .footer-description {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #17007f;
 }
 
 .footer-screen {
   margin-left: 0.5rem;
   /* position: absolute; */
+
+  border: 1px solid pink;
+  box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
+    inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
+  border-radius: 50%;
+  background-color: rgba(255, 201, 130, 0.5);
+  &:hover {
+    background-color: rgba(255, 233, 204, 1);
+  }
+  &:active {
+    background-color: rgba(255, 233, 204, 1);
+  }
+
   width: 3vw;
   height: 3vh;
-  border-radius: 2px;
+  /* border-radius: 2px; */
   /* display: inline-block; */
+
   background-color: rgb(108, 196, 255);
-  animation: pulse-glow-footer 2s linear infinite;
+  /* animation: pulse-glow-footer 2s linear infinite; */
   cursor: pointer;
 }
 
-@keyframes pulse-glow-footer {
+/* @keyframes pulse-glow-footer {
   0% {
     box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 2px 2px $pulseColorTwo;
   }
@@ -44,4 +65,4 @@ footer {
   100% {
     box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 2px 2px $pulseColorTwo;
   }
-}
+} */

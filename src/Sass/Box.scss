@@ -13,26 +13,22 @@ $outlineColor: rgb(0, 0, 0);
     box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
       inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
     position: absolute;
+    cursor: pointer;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
 
-    /*   overflow: hidden; */
-    /*   text-overflow: ellipsis; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
 
     width: 9vw;
     height: 9vh;
-    /* width: 9rem;
-  height: 9rem; */
-    /* padding: 1.6rem 1.7rem; */
 
     border-radius: 50%;
     font-size: 2rem;
-    font-family: "Geneva";
-    color: rgb(0, 0, 0); /* greenyellow */
+    font-family: "Geneva", Verdana, Tahoma, sans-serif;
+    color: #e8ff80;
     &:hover {
-      color: black;
+      color: #17007f;
       overflow: visible;
     }
     /* text-shadow: -1px -1px 0 $outlineColor, 1px -1px 0 $outlineColor,
@@ -40,10 +36,7 @@ $outlineColor: rgb(0, 0, 0);
     letter-spacing: 1px;
     text-decoration: none;
 
-    /* making the ... dots */
-    /*  white-space: nowrap;
-  overflow: hidden;
-  */
+    overflow: hidden;
   }
 
   .box-1 {
@@ -150,62 +143,18 @@ $outlineColor: rgb(0, 0, 0);
     transform: translate(0);
   }
 }
+@media (max-width: 1000px) {
+  .lake {
+    .box {
+      padding: 1rem;
+    }
+  }
+}
 
-/* @media (max-width: 600px) {
-  .lake .box {
-    padding: 1.6rem 0.5rem 1.6rem 1rem;
-  }
-} */
-
-/* @keyframes balls1 {
-  0% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(0, 10px);
-  }
-  50% {
-    transform: translate(10px, 10px);
-  }
-  75% {
-    transform: translate(10px, 0);
-  }
-  100% {
-    transform: translate(0);
+@media (max-width: 600px) {
+  .lake {
+    .box {
+      padding: 0.5rem;
+    }
   }
 }
-@keyframes balls2 {
-  0% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(0, 210px);
-  }
-  50% {
-    transform: translate(210px, 210px);
-  }
-  75% {
-    transform: translate(210px, 0);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-@keyframes balls3 {
-  0% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(0, 410px);
-  }
-  50% {
-    transform: translate(410px, 410px);
-  }
-  75% {
-    transform: translate(410px, 0);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
- */

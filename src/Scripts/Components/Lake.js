@@ -25,7 +25,7 @@ export default function Lake(props) {
   }, []);
 
   return (
-    <div className={`lake__${props.lakeNumber} plane`}>
+    <ul className={`lake__${props.lakeNumber} plane`}>
       {boxNumbering.map((box, i) => {
         console.log(`${props.lakeNumber} map`);
         /* console.log(data[box]); */
@@ -40,7 +40,7 @@ export default function Lake(props) {
           />
         );
       })}
-    </div>
+    </ul>
   );
 }
 
