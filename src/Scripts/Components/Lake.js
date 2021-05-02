@@ -34,9 +34,9 @@ export default function Lake(props) {
           <Box
             entry={data[box]}
             numberOfLake={props.lakeNumber}
-            boxNum={box}
+            boxNum={box + 1}
             key={box}
-            animationDelay={i + 1.2 + "s"}
+            /* animationDelay={i + 1.2 + "s"} */
           />
         );
       })}

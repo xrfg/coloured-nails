@@ -7,83 +7,85 @@ $outlineColor: rgb(0, 0, 0);
   src: local("Geneva"), url("../fonts/Geneva.ttf") format("truetype");
 }
 
-.lake .box {
-  border: 2px solid pink;
-  box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
-    inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
-  position: absolute;
+.lake {
+  .box {
+    border: 2px solid pink;
+    box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
+      inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
+    position: absolute;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  /*   overflow: hidden; */
-  /*   text-overflow: ellipsis; */
+    /*   overflow: hidden; */
+    /*   text-overflow: ellipsis; */
 
-  width: 9vw;
-  height: 9vh;
-  /* width: 9rem;
+    width: 9vw;
+    height: 9vh;
+    /* width: 9rem;
   height: 9rem; */
-  /* padding: 1.6rem 1.7rem; */
+    /* padding: 1.6rem 1.7rem; */
 
-  border-radius: 50%;
-  font-size: 2rem;
-  font-family: "Geneva";
-  color: greenyellow;
-  &:hover {
-    color: black;
-    overflow: visible;
-  }
-  /* text-shadow: -1px -1px 0 $outlineColor, 1px -1px 0 $outlineColor,
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: "Geneva";
+    color: rgb(0, 0, 0); /* greenyellow */
+    &:hover {
+      color: black;
+      overflow: visible;
+    }
+    /* text-shadow: -1px -1px 0 $outlineColor, 1px -1px 0 $outlineColor,
     -1px 1px 0 $outlineColor, 1px 1px 0 $outlineColor; */
-  letter-spacing: 1px;
-  text-decoration: none;
+    letter-spacing: 1px;
+    text-decoration: none;
 
-  /* making the ... dots */
-  /*  white-space: nowrap;
+    /* making the ... dots */
+    /*  white-space: nowrap;
   overflow: hidden;
   */
-}
+  }
 
-/* .lake .box-1 {
-  animation-delay: 1s;
+  .box-1 {
+    animation-delay: 1s;
+  }
+  .box-2 {
+    animation-delay: 2.2s;
+  }
+  .box-3 {
+    animation-delay: 3.4s;
+  }
+  .box-4 {
+    animation-delay: 4.6s;
+  }
+  .box-5 {
+    animation-delay: 5.8s;
+  }
+  .box-6 {
+    animation-delay: 7s;
+  }
+  .box-7 {
+    animation-delay: 8.2s;
+  }
+  .box-8 {
+    animation-delay: 9.4s;
+  }
+  .box-9 {
+    animation-delay: 1s;
+  }
+  .box-10 {
+    animation-delay: 2.2s;
+  }
+  .box-11 {
+    animation-delay: 3.4s;
+  }
+  .box-12 {
+    animation-delay: 4.6s;
+  }
+  .box-13 {
+    animation-delay: 1s;
+  }
 }
-.lake .box-2 {
-  animation-delay: 2s;
-}
-.lake .box-3 {
-  animation-delay: 3s;
-}
-.lake .box-4 {
-  animation-delay: 4s;
-}
-.lake .box-5 {
-  animation-delay: 5s;
-}
-.lake .box-6 {
-  animation-delay: 6s;
-}
-.lake .box-7 {
-  animation-delay: 7s;
-}
-.lake .box-8 {
-  animation-delay: 8s;
-}
-.lake .box-9 {
-  animation-delay: 1s;
-}
-.lake .box-10 {
-  animation-delay: 2s;
-}
-.lake .box-11 {
-  animation-delay: 3s;
-}
-.lake .box-12 {
-  animation-delay: 4s;
-}
-.lake .box-13 {
-  animation-delay: 1s;
-} */
 
 .lake__one__box {
   animation: balls1 1.2s infinite linear;

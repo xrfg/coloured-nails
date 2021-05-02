@@ -45,13 +45,13 @@ export default function Box(props) {
       className={`box lake__${props.numberOfLake}__box box-${props.boxNum}`}
       style={{
         animationPlayState: playState,
-        animationDelay: props.animationDelay,
+        /* animationDelay: props.animationDelay, */
         backgroundColor: opacity,
         zIndex: zIndex,
         display: display,
       }}
     >
-      <span>{firstThreeWords}</span>
+      <span>{props.boxNum}</span>
     </Link>
   );
 }
