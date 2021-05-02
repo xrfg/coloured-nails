@@ -2,10 +2,10 @@ import React from "react";
 import "../../Sass/Reset.scss";
 import "../../Sass/Description.scss";
 
-export default function Description() {
+export default function Description(props) {
   return (
     <div
-      className="overlay"
+      className="description-overlay"
       /* style={{ display: displayItem }}
       onClick={(e) => {
         console.log(e.target.className);
@@ -38,6 +38,7 @@ export default function Description() {
             in greece.
           </p>
         </div>
+        <button>X</button>
       </section>
     </div>
   );

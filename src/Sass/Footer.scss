@@ -51,6 +51,7 @@ footer {
   background-color: rgb(108, 196, 255);
   /* animation: pulse-glow-footer 2s linear infinite; */
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
 }
 
 /* @keyframes pulse-glow-footer {
