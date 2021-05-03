@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../Sass/Box.scss";
-
 export default function Box(props) {
-  /* const [textId] = useState(props.entry.id);
-  const [textDate] = useState(props.entry.date);
-  const [text] = useState(props.entry.text); */
-
   const { id, date, text } = props.entry;
 
   const [display, setDisplay] = useState("block");
@@ -21,12 +16,11 @@ export default function Box(props) {
   return (
     <Link
       to={{
-        pathname: `/box/${id}`,
+        pathname: `/${id}`,
         state: {
           textId: id,
           textDate: date,
           text: text,
-          /* textObj: props.entry */
         },
       }}
     >
@@ -47,7 +41,6 @@ export default function Box(props) {
         }}
         style={{
           animationPlayState: playState,
-          /* animationDelay: props.animationDelay, */
           backgroundColor: opacity,
           zIndex: zIndex,
           display: display,

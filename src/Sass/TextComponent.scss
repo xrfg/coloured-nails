@@ -13,13 +13,25 @@ $outline: rgb(66, 66, 66);
   min-width: 100vw;
   min-height: 100vh;
   position: absolute;
+
+  z-index: 50;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: appear-overlay 0.8s ease-in forwards;
+}
+
+@keyframes appear-overlay {
+  0% {
+  }
+  100% {
+    background-color: rgba(181, 164, 197, 0.3);
+  }
 }
 
 .text-component {
   position: absolute;
+  z-index: 100;
   height: 80vh;
   border-radius: 10px;
   /* border: 4px solid $website-blue; */
