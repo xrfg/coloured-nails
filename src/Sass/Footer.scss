@@ -1,4 +1,5 @@
 $pulseColorTwo: rgb(97, 161, 0);
+$secondary-shadow: rgb(221, 169, 0);
 
 @font-face {
   font-family: "Geneva";
@@ -24,7 +25,8 @@ footer {
 .footer-description {
   position: relative;
   text-decoration: none;
-  color: #17007f;
+  color: black;
+  /* color: #17007f; */
 }
 
 .footer-screen {

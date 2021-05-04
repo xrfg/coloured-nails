@@ -21,7 +21,9 @@ $outline: rgb(66, 66, 66);
 
 .overlay {
   min-width: 100vw;
+  min-width: -webkit-fill-available;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   position: absolute;
 
   z-index: 50;
@@ -35,18 +37,16 @@ $outline: rgb(66, 66, 66);
   0% {
   }
   100% {
-    background-color: rgba(181, 164, 197, 0.3);
+    background-color: rgba(181, 164, 197, 0.5);
   }
 }
 
 .text-component-card {
   position: absolute;
   z-index: 100;
-  height: 80vh;
+  max-height: 80vh;
   border-radius: 10px;
   /* border: 4px solid $website-blue; */
-  margin: 1rem;
-  padding: 1rem;
   overflow: auto;
   border: 2px solid pink;
   box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
@@ -54,38 +54,33 @@ $outline: rgb(66, 66, 66);
 }
 
 .text-component-card__content {
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .blob {
-    padding: 4rem 2rem 0rem 2rem;
+    padding: 3rem 2rem 0rem 2rem;
 
     &__text {
       @include body-text;
-      padding-bottom: 3.5rem;
-    }
-    &__date {
-      font-size: 1.4rem;
-      color: gray;
-      text-align: left;
     }
   }
 
   &__closing-btn {
+    cursor: pointer;
     border: none;
     border-radius: 4px;
     width: 3rem;
     height: 3rem;
-    padding: 1rem;
-    padding-bottom: 5rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
     display: flex;
-
     justify-content: center;
 
     span {
-      font-size: 2.2rem;
+      font-size: 2.6rem;
       font-weight: bold;
       font-family: cursive;
       color: rgb(203, 255, 187);
@@ -94,7 +89,55 @@ $outline: rgb(66, 66, 66);
       }
 
       animation: btn-appear 3s ease-in forwards;
-      transition: color 0.15s;
+      transition: all 0.15s;
+    }
+  }
+}
+.text-component-card__date {
+  .blob__date {
+    border-top: 1px solid pink;
+    width: 100%;
+
+    background-color: rgba(255, 233, 204, 1);
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: rgba(99, 99, 99, 1);
+    display: inline-block;
+  }
+}
+
+@media (max-width: 700px) {
+  .text-component-card {
+    max-height: 70vh;
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid pink;
+    border-bottom: 1px solid pink;
+  }
+  .text-component-card__content {
+    padding: 1.5rem;
+
+    &__closing-btn {
+      padding: 2rem;
+      padding-bottom: 4rem;
+
+      span {
+        &:active {
+          color: pink;
+        }
+      }
+    }
+  }
+
+  .overlay {
+    animation: appear-overlay-mobile 0.4s ease-in forwards;
+  }
+
+  @keyframes appear-overlay-mobile {
+    0% {
+    }
+    100% {
+      background-color: rgba(181, 164, 197, 0.5);
     }
   }
 }

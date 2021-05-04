@@ -1,6 +1,7 @@
 $outlineColor: rgb(0, 0, 0);
-$secondary-shadow: rgb(221, 169, 0.3);
+$secondary-shadow: rgb(53, 185, 0);
 $primary-shadow: rgba(203, 255, 187, 0.6);
+$secondary-shadow2: rgb(221, 169, 0);
 
 @font-face {
   font-family: "Geneva";
@@ -11,9 +12,10 @@ $primary-shadow: rgba(203, 255, 187, 0.6);
 
 .lake {
   .box {
-    border: 2px solid pink;
-    box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
-      inset 0 0 15px 5px $primary-shadow;
+    border: 1px solid $secondary-shadow;
+
+    box-shadow: 0 0 13px 3px rgba(255, 192, 203, 0.5),
+      inset 0 0 13px 3px $secondary-shadow;
     position: absolute;
     cursor: pointer;
 
@@ -28,9 +30,8 @@ $primary-shadow: rgba(203, 255, 187, 0.6);
     border-radius: 50%;
     font-size: 2rem;
     font-family: "Geneva", Verdana, Tahoma, sans-serif;
-    color: #e8ff80;
+    color: rgb(99, 99, 99);
     &:hover {
-      /* color: #17007f; */
       color: black;
       overflow: visible;
     }
@@ -155,7 +156,7 @@ $primary-shadow: rgba(203, 255, 187, 0.6);
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .lake {
     .box {
       padding: 0.5rem;

@@ -16,7 +16,6 @@ export default function TextComponent(props) {
         <main className="content-container text-component-card__content">
           <div className="blob">
             <p className="blob__text">{text}</p>
-            <p className="blob__date">{textDate}</p>
           </div>
           <div
             className="text-component-card__content__closing-btn"
@@ -25,6 +24,9 @@ export default function TextComponent(props) {
             <span>(X)</span>
           </div>
         </main>
+        <div className="text-component-card__date">
+          <span className="blob__date">{textDate}</span>
+        </div>
       </section>
     </div>
   );

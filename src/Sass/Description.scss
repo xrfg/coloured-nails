@@ -50,7 +50,7 @@ a {
   0% {
   }
   100% {
-    background-color: rgba(181, 164, 197, 0.3);
+    background-color: rgba(181, 164, 197, 0.5);
   }
 }
 .description-component {
@@ -72,10 +72,11 @@ a {
 
   &__text {
     @include body-text;
-    padding: 2rem 3rem 0rem 3rem;
+    padding: 2rem 3rem 0.5rem 3rem;
   }
 
   &__closing-btn {
+    cursor: pointer;
     border: none;
     border-radius: 4px;
     width: 3rem;
@@ -86,7 +87,7 @@ a {
     justify-content: center;
 
     span {
-      font-size: 2.2rem;
+      font-size: 2.6rem;
       font-weight: bold;
       font-family: cursive;
       color: rgb(203, 255, 187);
@@ -95,7 +96,7 @@ a {
       }
 
       animation: btn-appear 3s ease-in forwards;
-      transition: color 0.15s;
+      transition: all 0.15s;
     }
   }
 }
@@ -109,13 +110,12 @@ a {
   }
   100% {
     cursor: pointer;
-    opacity: 1;
     text-shadow: -1px -1px 0 $btn-text-outline, 1px -1px 0 $btn-text-outline,
       -1px 1px 0 $btn-text-outline, 1px 1px 0 $btn-text-outline;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .description-component {
     height: 47rem;
     width: 34rem;
