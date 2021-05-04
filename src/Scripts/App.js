@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Animation from "./Components/Animation";
 import "../Sass/Reset.scss";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "../Sass/Footer.scss";
 import "../Sass/Description.scss";
 
@@ -9,7 +9,7 @@ function App() {
   const [displayItem, setDisplayItem] = useState(false);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <div className="page">
           <Animation />
@@ -61,7 +61,7 @@ function App() {
           )}
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
