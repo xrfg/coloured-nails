@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     id: 1,
     date: "20:42 26-12-2019",
@@ -90,5 +90,3 @@ const data = [
       "lube up your nostrils and stop pretending you're into stuff you can't see. massage the melon in the bowl, a future is ahead you think. car honks and collateral vibrations, sizzling patatas bravas suck on this fragmented reality. rave off apathy support leaning stalks. do you know what's an alocasia? you know it needs feeding, right? pull on my sleave but pause at the pole. books were never it, it was more the nail polish on the page. w thinks in wiping wallets terms. will the police take my house shoes? not the astronaut boots, please. sci-fi in the 21st century is so low-tech. i wonder what they're like on e. or excited, in general. shaved off side burns tear down the window blinds. half bent desire high on hunger, no games. if that's OK? canons inclination hold a declination i don't remember the last time the ground was parallel to a line we picture at earth's core. asphalt against sky, balcony against whose gonna stain my sports jacket? how's the sports in the clouds? i ask the tower operator. does the ball bounce or fall? three dimension is bullshit, a multimedia happening. a full on spectrum, a party only goes three places: the fourth, your room, the last stop of the cycle. boys are dumb. ",
   },
 ];
-
-export { data };

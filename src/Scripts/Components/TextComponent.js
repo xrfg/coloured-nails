@@ -3,7 +3,7 @@ import "../../Sass/Reset.scss";
 import "../../Sass/TextComponent.scss";
 
 export default function TextComponent(props) {
-  const { textId, textDate, text } = props.location.state;
+  const { textDate, text } = props.location.state;
 
   return (
     <div
