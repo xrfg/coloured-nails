@@ -40,7 +40,7 @@ body {
 .page {
   position: relative;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
+  /*   min-height: -webkit-fill-available; */
   width: 100vw;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -72,4 +72,10 @@ body {
 
 .background4 {
   background-image: linear-gradient(white, rgb(108, 196, 255));
+}
+
+@media (max-width: 700px) {
+  .page {
+    min-height: -webkit-fill-available;
+  }
 }
