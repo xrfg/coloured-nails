@@ -30,42 +30,21 @@ footer {
 }
 
 .footer-screen {
-  margin-left: 0.5rem;
-  /* position: absolute; */
+  margin-left: 0.7rem;
 
-  border: 1px solid pink;
-  box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
-    inset 0 0 15px 5px rgba(203, 255, 187, 0.6);
+  border: 1px solid rgb(248, 104, 135);
+  box-shadow: 0 0 6px 3px rgba(201, 113, 13, 0.6),
+    inset 0 0 6px 3px rgba(152, 170, 146, 0.6);
   border-radius: 50%;
-  background-color: rgba(255, 201, 130, 0.5);
+  background-color: rgba(255, 228, 109, 0.7);
   &:hover {
-    background-color: rgba(255, 233, 204, 1);
+    background-color: rgb(250, 231, 207);
   }
   &:active {
-    background-color: rgba(255, 233, 204, 1);
+    background-color: rgb(250, 231, 207);
   }
-
   width: 3vw;
   height: 3vh;
-  /* border-radius: 2px; */
-  /* display: inline-block; */
-
-  background-color: rgb(108, 196, 255);
-  /* animation: pulse-glow-footer 2s linear infinite; */
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
-
-/* @keyframes pulse-glow-footer {
-  0% {
-    box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 2px 2px $pulseColorTwo;
-  }
-
-  50% {
-    box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 4px 4px $pulseColorTwo;
-  }
-
-  100% {
-    box-shadow: 0 0 1px 1px $pulseColorTwo, inset 0 0 2px 2px $pulseColorTwo;
-  }
-} */

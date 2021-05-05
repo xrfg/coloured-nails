@@ -28,9 +28,10 @@ function App() {
 
           {displayItem && (
             <div className="description-overlay">
-              <section className="background2-2 description-component">
+              <section className="description-component">
                 <p className="description-component__text">
-                  'coloured nails' is a collection of texts co-written by{" "}
+                  <b style={{ color: "white" }}>coloured nails is</b> a
+                  collection of texts co-written by{" "}
                   <a
                     rel="noreferrer"
                     href="https://www.instagram.com/slantedroof2000/"
@@ -54,7 +55,7 @@ function App() {
                   className="description-component__closing-btn"
                   onClick={() => setDisplayItem(!displayItem)}
                 >
-                  <span>(X)</span>
+                  <span>(close)</span>
                 </div>
               </section>
             </div>

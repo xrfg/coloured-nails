@@ -11,7 +11,7 @@ export default function Box(props) {
   const [zIndex, setZIndex] = useState("10");
 
   const fullText = text.split(" ");
-  const firstThreeWords = `${fullText[0]} ${fullText[1]} ${fullText[2]}`;
+  const firstWord = `${fullText[0]}`;
 
   return (
     <Link
@@ -28,7 +28,7 @@ export default function Box(props) {
         className={`box lake__${props.numberOfLake}__box box-${props.boxNum}`}
         onMouseOver={() => {
           setPlayState("paused");
-          setOpacity("rgba(255, 233, 204, 1)");
+          setOpacity("rgb(250, 231, 207)");
           setZIndex("20");
         }}
         onMouseOut={() => {
@@ -46,7 +46,7 @@ export default function Box(props) {
           display: display,
         }}
       >
-        {firstThreeWords}
+        <span>{firstWord.toUpperCase()}</span>
       </li>
     </Link>
   );

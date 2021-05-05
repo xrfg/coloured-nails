@@ -1,4 +1,7 @@
-$green-shadow: rgb(97, 161, 0);
+$green-shadow: rgb(0, 138, 138);
+$original-shadow: rgb(97, 161, 0);
+$original-background: rgb(108, 196, 255);
+
 $secondary-shadow: rgb(221, 169, 0);
 
 .universe {
@@ -8,7 +11,7 @@ $secondary-shadow: rgb(221, 169, 0);
 }
 
 .galaxy {
-  background-color: rgb(108, 196, 255);
+  background-color: rgb(255, 228, 109);
   box-shadow: 0 0 10px 2px $green-shadow, inset 0 0 12px 4px $green-shadow;
   border: 1px solid $green-shadow;
   border-radius: 10px;

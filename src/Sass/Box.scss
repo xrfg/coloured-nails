@@ -1,6 +1,8 @@
 $outlineColor: rgb(0, 0, 0);
 $secondary-shadow: rgb(221, 169, 0.3);
-$primary-shadow: rgba(203, 255, 187, 0.6);
+$primary-shadow: rgba(152, 170, 146, 0.6);
+$original-shadow: rgba(203, 255, 187, 0.6);
+$which: rgb(250, 231, 207);
 
 @font-face {
   font-family: "Geneva";
@@ -11,36 +13,38 @@ $primary-shadow: rgba(203, 255, 187, 0.6);
 
 .lake {
   .box {
-    border: 2px solid pink;
-    box-shadow: 0 0 15px 5px rgba(255, 192, 203, 0.6),
+    border: 1px solid rgb(248, 104, 135); /* pink */
+    box-shadow: 0 0 15px 5px rgba(201, 113, 13, 0.6),
       inset 0 0 15px 5px $primary-shadow;
     position: absolute;
     cursor: pointer;
 
-    padding: 2rem;
+    padding: 1.6rem;
 
     /* text-overflow: ellipsis; */
     /* white-space: nowrap; */
 
     width: 9vw;
     height: 9vh;
-
+    text-align: center;
     border-radius: 50%;
     font-size: 2rem;
     font-family: "Geneva", Verdana, Tahoma, sans-serif;
-    color: #e8ff80;
+    color: transparent;
     &:hover {
       /* color: #17007f; */
-      color: black;
+      text-shadow: 1px 1px 1px black;
       overflow: visible;
     }
+    text-shadow: 1px 1px 1px #e8ff80;
     /* text-shadow: -1px -1px 0 $outlineColor, 1px -1px 0 $outlineColor,
-    -1px 1px 0 $outlineColor, 1px 1px 0 $outlineColor; */
+      -1px 1px 0 $outlineColor, 1px 1px 0 $outlineColor; */
     letter-spacing: 1px;
-    text-decoration: none;
     transition: all 0.1s ease-in-out;
 
     overflow: hidden;
+    span {
+    }
   }
 
   .box-1 {
@@ -150,7 +154,7 @@ $primary-shadow: rgba(203, 255, 187, 0.6);
 @media (max-width: 1000px) {
   .lake {
     .box {
-      padding: 1rem;
+      padding: 2rem 1rem;
     }
   }
 }
@@ -158,7 +162,7 @@ $primary-shadow: rgba(203, 255, 187, 0.6);
 @media (max-width: 700px) {
   .lake {
     .box {
-      padding: 0.5rem;
+      padding: 1.8rem 0.5rem;
     }
   }
 }

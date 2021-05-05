@@ -21,7 +21,7 @@ export default function TextComponent(props) {
             className="text-component-card__content__closing-btn"
             onClick={() => props.history.goBack()}
           >
-            <span>(X)</span>
+            <span>(close)</span>
           </div>
         </main>
         <div className="text-component-card__date">
