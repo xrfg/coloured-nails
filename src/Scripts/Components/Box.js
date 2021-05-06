@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../Sass/Box.scss";
+
 export default function Box(props) {
   const { id, date, text } = props.entry;
 

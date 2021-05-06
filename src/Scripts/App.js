@@ -55,7 +55,7 @@ function App() {
                   className="description-component__closing-btn"
                   onClick={() => setDisplayItem(!displayItem)}
                 >
-                  <span>(close)</span>
+                  <span>BACK TO POOL</span>
                 </div>
               </section>
             </div>
