@@ -19,7 +19,7 @@ $pink: rgb(248, 104, 135);
   color: rgb(231, 177, 0);
   text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline,
     1px 1px 0 $outline;
-  line-height: 2.9rem;
+  line-height: 3rem;
   letter-spacing: 0.09rem;
 }
 
@@ -71,6 +71,17 @@ $pink: rgb(248, 104, 135);
     &__text {
       @include body-text;
     }
+
+    p {
+      text-indent: 2.4rem;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+    }
+    /* p:last-of-type {
+      margin-bottom: 0rem;
+      background-color: blue;
+    } */
   }
 
   &__closing-btn {
@@ -122,6 +133,13 @@ $pink: rgb(248, 104, 135);
   }
   .text-component-card__content {
     padding: 1.5rem;
+
+    .blob {
+      p {
+        text-indent: 2rem;
+        letter-spacing: 0.1rem;
+      }
+    }
 
     &__closing-btn {
       opacity: 0.8;

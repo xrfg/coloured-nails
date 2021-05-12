@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../../Sass/Box.scss";
 
 export default function Box(props) {
-  const { id, date, text } = props.entry;
+  const { id, date, first, text } = props.entry;
 
   const [display, setDisplay] = useState("block");
 
@@ -11,9 +11,9 @@ export default function Box(props) {
   const [opacity, setOpacity] = useState("rgba(255, 201, 130, 0.5)");
   const [zIndex, setZIndex] = useState("10");
 
-  const fullText = text.split(" ");
+  /*  const fullText = text.split(" ");
   const firstWord = `${fullText[0]}`;
-
+ */
   return (
     <Link
       to={{
@@ -47,7 +47,7 @@ export default function Box(props) {
           display: display,
         }}
       >
-        <span>{firstWord.toUpperCase()}</span>
+        <span>{first.toUpperCase()}</span>
       </li>
     </Link>
   );

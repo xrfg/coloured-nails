@@ -15,7 +15,7 @@ export default function TextComponent(props) {
       <section className="background2-1 text-component-card">
         <main className="content-container text-component-card__content">
           <div className="blob">
-            <p className="blob__text">{text}</p>
+            <div className="blob__text">{text}</div>
           </div>
           <div
             className="text-component-card__content__closing-btn"
