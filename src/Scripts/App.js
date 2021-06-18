@@ -45,7 +45,7 @@ function App() {
                     href="https://www.instagram.com/lavenderexcesssweat"
                     target="_blank"
                   >
-                    henrique martins
+                    xerox martins
                   </a>{" "}
                   in the spawn of a few days between december 2019 and january
                   2020, in greece.
